@@ -54,4 +54,4 @@ final_concatenated_audio /= np.max(np.abs(final_concatenated_audio))
 
 # Write the concatenated audio as a single audio file with a specific sampling rate
 output_file = "/home/user/Desktop/Drone Detection Pre-processing Data/Binary Drone Detection/Binary Data/Non_drone_merged_all_SNRs.wav"
-sf.write(output_file, final_concatenated_audio.flatten(), 22050)
+sf.write(output_file, final_concatenated_audio.flatten(), 44100)
