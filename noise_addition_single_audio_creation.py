@@ -19,7 +19,7 @@ audio_file = "/home/user/Desktop/Drone Detection Pre-processing Data/Binary Dron
 y, sr = librosa.load(audio_file, sr=None)
 
 # Define segment length in samples (100ms)
-segment_length_samples = int(0.05 * sr)
+segment_length_samples = int(0.8 * sr)
 
 # Calculate the total number of segments
 num_segments = len(y) // segment_length_samples
